@@ -1,0 +1,77 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.main{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+
+  align-items: center;
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.container{
+  width: 500px;
+  height: 200px;
+  border: 2px dashed red;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.container.active{
+  border: 2px dashed #fff;
+}
+
+
+.file{
+  text-decoration:none;
+  color: rgba(255,255,255,0.8);
+  display:block;
+  background-color: #41415d;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  position:relative;
+  overflow: hidden;
+  font-size: 18px;
+}
+.file .progress {
+  background-color: rgba(80,80,120, .8);
+  position: absolute;
+  inset:0;
+  width:0;
+  padding-top: 10px;
+  text-align: center;
+}
+.file .progress.done{
+  top: 100px;
+}
